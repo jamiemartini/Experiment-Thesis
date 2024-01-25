@@ -1,0 +1,30 @@
+{{ block title }}
+    Conclusion
+{{ endblock }}
+
+{{ block content }}
+
+    <!-- <p>
+        You have reached the end of the experiment. The researchers thank you for your participation.
+    </p>
+
+    <p>
+        State when and how the participants will receive their payment.
+    </p>
+
+    <p>
+        You may now exit the page.
+    </p> -->
+    <div class="card">
+        <div class="card-header">
+            <h3>The game ended.</h3>
+        </div>
+        <div class="card-body">
+            Your choice is <b>{{choice}}</b> AND Other's choice is <b>{{other_choice}}</b><br>
+            Your total payoff is <b>{{ participant.payoff }}</b>.
+        </div>
+    </div>
+    <div class="mt-2">
+        {% next_button %}
+    </div>
+{{ endblock }}

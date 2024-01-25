@@ -1,0 +1,35 @@
+<div class="card bg-light m-3">
+    <div class="card-body">
+
+        <h3>
+            Instructions
+        </h3>
+
+        <p>
+            You will be anonymously paired with another participant. Each of you will choose, one after the other,
+            between two options.<br>
+            We will first explain how your choices, and the other participant's choices, determine how much you will earn from the experiment.
+            We will then explain who chooses first and who chooses second.
+        </p>
+
+        <h3>
+            Choices and Payments:
+        </h3>
+
+        <p>Suppose the participant who chooses first chooses A:</p>
+        <ul>
+            <li>If the other participant then also chooses A, both receive {{C.PAYOFFC}}</li>
+            <li>If the other participant then chooses B, he/she will receive {{C.PAYOFFD}} while the participant who chose first will receive {{C.PAYOFFA}}</li>
+        </ul>
+        <br>
+        <p>Suppose the participant who chooses first chooses B:</p>
+        <ul>
+            <li>If the other participant then also chooses B, both receive {{C.PAYOFFB}}</li>
+            <li>If the other participant then chooses A, he/she will receive {{C.PAYOFFA}} while the participant who chose first will receive {{C.PAYOFFD}}</li>
+        </ul>
+        <br>
+        <p>The game is summarized in the diagram below.</p>
+        <img src="/static/Tree03.png"/>
+        <br>
+    </div>
+</div>
